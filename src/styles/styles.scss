@@ -1,0 +1,35 @@
+.modalContent {
+  display: flex;
+  align-items: center;
+  height: 10%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 2%;
+  border: 1px solid black;
+  font-size: large;
+  color: black;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.btns {
+  margin-bottom: 10px;
+}
+
+.loading {
+  display: flex;
+  color: black;
+  width: 40vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoBtnContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
