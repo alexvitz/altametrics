@@ -1,23 +1,50 @@
 .modalContent {
   display: flex;
+  justify-content: end;
+  flex-direction: column;
   align-items: center;
-  height: 10%;
+  height: fit-content;
   background-color: white;
   border-radius: 5px;
   padding: 2%;
   border: 1px solid black;
   font-size: large;
   color: black;
+  text-align: start;
 }
 
 .sidebar {
   display: flex;
   flex-direction: column;
-  padding: 0 10px;
+  justify-content: center;
+  padding: 0 10px 0 5px;
+  background-color: #f8f4fc;
+  height: 100%;
+  width: 10%;
 }
 
 .btns {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
   margin-bottom: 10px;
+  background-color: transparent;
+  color: black;
+  padding: 5px 0 5px 10px;
+  width: 150px;
+  border: none;
+  outline: none;
+}
+
+.btns:focus {
+  background-color: #8c4c94;
+  outline: none;
+  color: white;
+}
+
+.btns:hover {
+  border: none;
+  outline: none;
 }
 
 .loading {
@@ -32,4 +59,60 @@
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+.sidebarTitle {
+  font-size: 15px;
+  color: lightgray;
+  text-align: left;
+}
+
+.tableContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.functionsContainer {
+  color: black;
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 10px;
+  padding-bottom: 2%;
+}
+
+.tableHeader {
+  background-color: #ececec;
+  border-right: 1px solid lightgray !important;
+}
+
+.topBarContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: black;
+  width: 85%;
+  border-bottom: 1px solid lightgray;
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightIcons {
+  display: inline-flex;
+  margin: 0 10px 0 auto;
+  gap: 15px;
+}
+
+.topBarSecondaryText {
+  color: lightgray;
+}
+
+.topBarTextContainer {
+  margin-left: 10%;
 }
